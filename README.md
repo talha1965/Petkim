@@ -1,2 +1,0 @@
-# Petkim
-Petkim web sitesi
