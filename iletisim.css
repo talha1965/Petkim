@@ -1,0 +1,154 @@
+/* Genel sayfa arka planı */
+body {
+    background-color: #f8f9fa;
+  }
+  
+  /* Başlık stilleri */
+  h2 {
+    color: #8b0000;
+    font-weight: 600;
+  }
+  
+  /* Form alanı kutusu */
+  form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  p:hover {
+    color: #8B0000; /* Üzerine gelince koyu kırmızıya geçiş */
+  }
+  p {
+    font-family: 'Roboto', 'Segoe UI', Tahoma, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8; /* Okunabilirliği artırır */
+    color: #333333; /* Yumuşak siyah, göz yormaz */
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.3px;
+    text-align: justify; /* Düzgün hizalanmış yazı görünümü */
+    transition: color 0.3s ease;
+  }
+  /* Etiket stilleri */
+  form label {
+    font-weight: 500;
+    color: #333333;
+  }
+  
+  /* Giriş alanları */
+  form input,
+  form textarea {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+  }
+  
+  /* Giriş alanı focus */
+  form input:focus,
+  form textarea:focus {
+    border-color: #8b0000;
+    box-shadow: 0 0 0 0.2rem rgba(139, 0, 0, 0.2);
+  }
+  
+  /* Gönder butonu */
+  form button {
+    background-color: #8b0000;
+    border-color: #8b0000;
+    border-radius: 6px;
+    font-weight: 500;
+  }
+  
+  form button:hover {
+    background-color: #a40000;
+    border-color: #a40000;
+  }
+  
+  /* KVKK kutucuğu */
+  .form-check-label a {
+    color: #8b0000;
+    text-decoration: underline;
+  }
+  
+  .form-check-label a:hover {
+    color: #a40000;
+  }
+  
+  /* Bilgi kartı */
+  .card {
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .card-title {
+    color: #8b0000;
+    font-weight: 600;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #333;
+  }
+  /* Sidebar */
+.sidebar {
+    width: 220px;
+    min-height: 100vh;
+    background-color: #8B0000; /* Koyu kırmızı */
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    z-index: 1030;
+  }
+  
+  .sidebar img {
+    max-height: 40px;
+    width: auto;
+  }
+  
+  .sidebar ul.nav {
+    padding-left: 0;
+    margin-top: 1rem;
+    list-style: none;
+  }
+  
+  .sidebar ul.nav li.nav-item {
+    margin-bottom: 0.8rem;
+  }
+  
+  .sidebar ul.nav li.nav-item a.nav-link {
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.3rem;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+  }
+  
+  .sidebar ul.nav li.nav-item a.nav-link:hover,
+  .sidebar ul.nav li.nav-item a.nav-link.active {
+    background-color: #6b0000;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+ 
+  
+  /* Mobil uyumlu sidebar */
+  @media (max-width: 991px) {
+    .sidebar {
+      position: fixed;
+      left: -220px;
+    }
+  
+    .sidebar.active {
+      left: 0;
+    }
+  
+    .flex-grow-1 {
+      margin-left: 0;
+    }
+  }
+  

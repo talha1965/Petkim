@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petkim | Kariyer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="kariyer.css">
+  <link rel="stylesheet" href="hover.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+       <!-- Sidebar -->
+  <div class="d-flex">
+    <div id="sidebar" class="sidebar p-3 text-white">
+      <img src="images/petkim-logo.png" alt="Petkim Logo" style="height: 40px; width: auto;" class="me-2">
+      <br><br>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a href="index.html" class="nav-link text-white d-flex"><i class="bi bi-house-door me-2"></i> Anasayfa</a></li>
+        <li class="nav-item"><a href="hakkimizda.html" class="nav-link text-white d-flex"><i class="bi bi-info-circle me-2"></i> Hakkımızda</a></li>
+        <li class="nav-item"><a href="tarihce.html" class="nav-link text-white d-flex"><i class="bi bi-clock-history me-2"></i>Tarihçe</a></li>
+        <li class="nav-item"><a href="urunler.html" class="nav-link text-white d-flex"><i class="bi bi-box-seam me-2"></i> Ürünler</a></li>
+        <li class="nav-item"><a href="hizmetler.html" class="nav-link text-white d-flex"><i class="bi bi-gear-fill me-2"></i>Hizmetler</a></li>
+        <li class="nav-item"><a href="kariyer.html" class="nav-link text-white d-flex active"><i class="bi bi-people-fill me-2"></i> Kariyer</a></li>
+        <li class="nav-item"><a href="iletisim.html" class="nav-link text-white d-flex"><i class="bi bi-envelope me-2"></i> İletişim</a></li>
+        <li class="nav-item"><a href="dilekvesıkayet.html" class="nav-link text-white d-flex"><i class="bi bi-envelope-paper me-2"></i>Dilek ve Şikayet</a></li>
+        <li class="nav-item"><a href="kvkk.html" class="nav-link text-white d-flex"><i class="bi bi-shield-lock-fill me-2"></i>KVKK</a></li>
+
+      </ul>
+    </div>
+    <div class="flex-grow-1 ">
+      <nav style="background-color: darkred;" class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+          <button id="sidebarToggle" class="btn btn-outline-light me-3"><i class="bi bi-list"></i></button>
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/petkim-logo.png" alt="Petkim Logo" style="height: 40px;" class="me-2" />
+          </a>
+          <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link text-white" href="index.html"><i class="bi bi-house-door"></i> Anasayfa</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="hakkimizdaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-info-circle"></i> Hakkımızda
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="hakkimizdaDropdown">
+                  <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
+                  <li><a class="dropdown-item" href="tarihce.html">Tarihçe</a></li>
+                </ul>
+              </li>              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="urunlerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-box-seam"></i> Ürünler
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="urunlerDropdown">
+                  <li><a class="dropdown-item" href="urunler.html">Ürünler</a></li>
+                  <li><a class="dropdown-item" href="hizmetler.html">Hizmetler</a></li>
+                </ul>
+              </li>                            <li class="nav-item"><a class="nav-link text-white" href="kariyer.html"><i class="bi bi-people-fill"></i> Kariyer</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="urunlerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-box-seam"></i> İletişim
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="urunlerDropdown">
+                  <li><a class="dropdown-item" href="iletisim.html">İletişim</a></li>
+                  <li><a class="dropdown-item" href="dilekvesıkayet.html">Dilek ve Şikayet</a></li>
+                </ul>
+              </li>      
+            </ul>
+          </div>
+        </div>
+      </nav>
+  <div class="container my-5">
+
+    <h1 class="main-title mb-4">SOCAR Kariyer</h1>
+    <p class="intro-text mb-5">Dünyadaki en güçlü kaynak sizin enerjiniz. SOCAR’a katılın, enerjiniz bizimle büyüsün.</p>
+  
+    <section class="info-section mb-5">
+      <h2 class="section-title">SOCAR Türkiye'de</h2>
+  
+      <div class="card mb-4">
+        <h3 class="card-title">Enerjimiz Hep Yüksek!</h3>
+        <p>Evrensel değerlere kökten bağlıyız. Çalışanlarımıza eşitlik, kapsayıcılık ve çeşitlilik ilkelerimiz temelinde yaklaşıyor onlara fikirlerini açıkça sunabilecekleri, mümkün olan en katılımcı iş ortamını sunmak için çalışıyoruz.</p>
+      </div>
+  
+      <div class="card mb-4">
+        <h3 class="card-title">İşte Yenilik</h3>
+        <p>“İşte Yenilik” projemiz ile çalışma arkadaşlarımızın ofiste, uzaktan ve hibrit modelde çalışmalarına imkân sağlıyoruz. Böylece diledikleri her yerden çalışabiliyorken sadece ihtiyaçları olduğunda ofise gelerek zamanlarını en verimli şekilde yönetebiliyorlar.</p>
+      </div>
+  
+      <div class="card mb-4">
+        <h3 class="card-title">Enerjimiz Çeşitlilik</h3>
+        <p>Farklılıklarımızın en büyük zenginliğimiz olduğunu biliyoruz. Enerjimiz Çeşitlilik diyerek başlattığımız proje ile çalışma arkadaşlarımıza özgün ihtiyaçları doğrultusunda kullanabilecekleri çok çeşitli haklar tanıyoruz.</p>
+      </div>
+  
+      <div class="card mb-4">
+        <h3 class="card-title">SOCAR Türkiye Gönüllüleri</h3>
+        <p>500’e yakın çalışanımızın gönüllü katılımıyla oluşturduğumuz SOCAR Türkiye Gönüllüleri Platformu birbirinden değerli projeler hayata geçiriyor. Eğitim, çevre sağlık, spor, hayvanları koruma ve sosyal konular özelindeki 6 takımdan oluşan gönüllülerimiz toplumda fark yaratmaya devam ediyor.</p>
+      </div>
+  
+      <div class="card mb-4">
+        <h3 class="card-title">Türkiye’nin Mühendis Kızları</h3>
+        <p>Türkiye’nin Mühendis Kızları Projesi’nin destekçisiyiz! Kimya Mühendisliği bölümlerinde okuyan 10 kız öğrenciye burs desteği sağlıyor ve mentorluk yapıyoruz.</p>
+      </div>
+  
+      <div class="card mb-4">
+        <h3 class="card-title">Dijitalleşmede Liderlik</h3>
+        <p>STAR Rafineri ve Petkim Dünya Ekonomik Forumu’nun (WEF) üretimde endüstri 4.0 teknolojilerini en iyi kullanan tesisleri belirlediği “Global Lighthouse Network”üne seçildi. Networke 2020 yılında Türkiye’den seçilen tek şirket Petkim olurken, 2021 yılında seçilen STAR Rafineri ise bu ağ içerisindeki dünyanın ilk rafinerisi oldu.</p>
+      </div>
+    </section>
+  
+    <!-- Resim ve metin sağ-sol bölümleri -->
+  
+    <section class="image-text-section my-5">
+  
+      <h2 class="section-title mb-4">SOCAR Türkiye’de Staj</h2>
+      <div class="image-text-row left-img">
+        <img src="images/kariyer.jpg" alt="SOCAR Türkiye’de Staj" />
+        <div class="text-content">
+          <p>Şirketimizde staj programları iki yönlü bir öğrenme sürecinden geçiyor. Stajyerlerimizi kurumsal yaşamın dinamikleriyle tanıştırırken, onların işimize ve kültürümüze katacaklarıyla da yakından ilgileniyoruz.</p>
+        </div>
+      </div>
+  
+      <h2 class="section-title my-4">SOCAR Türkiye’de Gelişim</h2>
+      <div class="image-text-row right-img">
+        <div class="text-content">
+          <p>SOCAR Türkiye olarak çalışanlarımızın gelişimini bir bütün olarak ele alıyor, kişisel ve profesyonel gelişimlerini birbirinden ayırmıyoruz. Çalışma arkadaşlarımızın iş süreçlerine hakimiyetlerini ve mesleki becerilerini artıracak, bireysel ve profesyonel gelişimlerinde fark yaratacak eğitim ve gelişim programları oluşturuyoruz.</p>
+        </div>
+        <img src="images/insan-kaynaklari.jpg" alt="SOCAR Türkiye’de Gelişim" />
+      </div>
+  
+    </section>
+  
+  </div>
+  <footer class="text-center text-white py-4" style="background-color: #003366;">
+    <div class="container">
+      <strong class="mb-2">&copy; 2025 Petkim. Tüm hakları saklıdır.</strong>
+      <div>
+        <a href="https://www.facebook.com/petkimofficial/?locale=tr_TR" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="https://x.com/PetkimOfficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/petkim-petrokimya-holding-a.s.?originalSubdomain=tr" class="text-white"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+      
+</body>
+</html>

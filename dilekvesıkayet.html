@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petkim | Dilek Şikayet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="hover.css">
+  <link rel="stylesheet" href="dilekvesıkayet.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <div class="d-flex">
+        <div id="sidebar" class="sidebar p-3 text-white">
+          <img src="images/petkim-logo.png" alt="Petkim Logo" style="height: 40px; width: auto;" class="me-2">
+          <br><br>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a href="index.html" class="nav-link text-white d-flex"><i class="bi bi-house-door me-2"></i> Anasayfa</a></li>
+            <li class="nav-item"><a href="hakkimizda.html" class="nav-link text-white d-flex"><i class="bi bi-info-circle me-2"></i> Hakkımızda</a></li>
+            <li class="nav-item"><a href="tarihce.html" class="nav-link text-white d-flex"><i class="bi bi-clock-history me-2"></i>Tarihçe</a></li>
+            <li class="nav-item"><a href="urunler.html" class="nav-link text-white d-flex"><i class="bi bi-box-seam me-2"></i> Ürünler</a></li>
+            <li class="nav-item"><a href="hizmetler.html" class="nav-link text-white d-flex"><i class="bi bi-gear-fill me-2"></i>Hizmetler</a></li>
+            <li class="nav-item"><a href="kariyer.html" class="nav-link text-white d-flex"><i class="bi bi-people-fill me-2"></i> Kariyer</a></li>
+            <li class="nav-item"><a href="iletisim.html" class="nav-link text-white d-flex"><i class="bi bi-envelope me-2"></i> İletişim</a></li>
+            <li class="nav-item"><a href="dilekvesıkayet.html" class="nav-link text-white d-flex active"><i class="bi bi-envelope-paper me-2"></i>Dilek ve Şikayet</a></li>
+            <li class="nav-item"><a href="kvkk.html" class="nav-link text-white d-flex"><i class="bi bi-shield-lock-fill me-2"></i>KVKK</a></li>
+          </ul>
+        </div>
+    
+        <div class="flex-grow-1 ">
+    
+          <nav style="background-color: darkred;" class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid">
+              <button id="sidebarToggle" class="btn btn-outline-light me-3"><i class="bi bi-list"></i></button>
+              <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/petkim-logo.png" alt="Petkim Logo" style="height: 40px;" class="me-2" />
+              </a>
+              <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link text-white" href="index.html"><i class="bi bi-house-door"></i> Anasayfa</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="hakkimizdaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-info-circle"></i> Hakkımızda
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="hakkimizdaDropdown">
+                      <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
+                      <li><a class="dropdown-item" href="tarihce.html">Tarihçe</a></li>
+                    </ul>
+                  </li>              
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="urunlerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-box-seam"></i> Ürünler
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="urunlerDropdown">
+                      <li><a class="dropdown-item" href="urunler.html">Ürünler</a></li>
+                      <li><a class="dropdown-item" href="hizmetler.html">Hizmetler</a></li>
+                    </ul>
+                  </li>                            <li class="nav-item"><a class="nav-link text-white" href="kariyer.html"><i class="bi bi-people-fill"></i> Kariyer</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="urunlerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-box-seam"></i> İletişim
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="urunlerDropdown">
+                      <li><a class="dropdown-item" href="iletisim.html">İletişim</a></li>
+                      <li><a class="dropdown-item" href="dilekvesıkayet.html">Dilek ve Şikayet</a></li>
+                    </ul>
+                  </li>       
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </div>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+          <div class="card shadow-lg rounded">
+            <div class="card-header bg-primary text-white">
+              <h4 class="mb-0">Petkim Geri Bildirim Formu</h4>
+            </div>
+            <div class="card-body">
+      
+              <!-- Üstteki tür seçimi -->
+              <div class="mb-3">
+                <label class="form-label">Bildirim Türü</label>
+                <select class="form-select" required>
+                  <option selected disabled>Seçiniz...</option>
+                  <option>Şikayet</option>
+                  <option>İstek</option>
+                  <option>Öneri</option>
+                  <option>Memnuniyet</option>
+                  <option>Bilgilendirme</option>
+                </select>
+              </div>
+      
+              <!-- Ad Soyad -->
+              <div class="mb-3">
+                <label class="form-label">Ad Soyad</label>
+                <input type="text" class="form-control" placeholder="Adınızı ve soyadınızı girin" required>
+              </div>
+      
+              <!-- E-Posta -->
+              <div class="mb-3">
+                <label class="form-label">E-posta</label>
+                <input type="email" class="form-control" placeholder="ornek@eposta.com" required>
+              </div>
+      
+              <!-- Telefon -->
+              <div class="mb-3">
+                <label class="form-label">Telefon</label>
+                <input type="tel" class="form-control" placeholder="05xx xxx xx xx" required>
+              </div>
+      
+              <!-- Konu seçimi -->
+              <div class="mb-3">
+                <label class="form-label">Konu</label>
+                <select class="form-select" required>
+                  <option selected disabled>Konu seçiniz...</option>
+                  <option>Ürün Kalitesi</option>
+                  <option>Personel Davranışı</option>
+                  <option>Hizmet Gecikmesi</option>
+                  <option>Teknik Destek</option>
+                  <option>Fiyatlandırma</option>
+                  <option>Diğer</option>
+                </select>
+              </div>
+      
+              <!-- Açıklama -->
+              <div class="mb-3">
+                <label class="form-label">Açıklama</label>
+                <textarea class="form-control" rows="4" placeholder="Açıklamanızı buraya yazın..." required></textarea>
+              </div>
+      
+              <!-- KVKK kutucuğu -->
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="kvkkCheck" required>
+                <label class="form-check-label" for="kvkkCheck">
+                    <a href="kvkk.html" target="_blank">Kişisel Verilerin Korunması Kanunu’nu</a> okudum ve onaylıyorum.
+                </label>
+              </div>
+      
+              <!-- Gönder butonu -->
+              <div class="text-end">
+                <button type="submit" class="btn btn-primary">Gönder</button>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+    
+    <footer class="text-center text-white py-4" style="background-color: #003366;">
+      <div class="container">
+        <strong class="mb-2">&copy; 2025 Petkim. Tüm hakları saklıdır.</strong>
+        <div>
+          <a href="https://www.facebook.com/petkimofficial/?locale=tr_TR" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+          <a href="https://x.com/PetkimOfficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/petkim-petrokimya-holding-a.s.?originalSubdomain=tr" class="text-white"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

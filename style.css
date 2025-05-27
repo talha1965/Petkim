@@ -1,0 +1,243 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden; /* Yatay kaydırmayı kapat */
+  background-color: #f0f0f0; /* İstersen arka plan rengini buradan ayarla */
+  font-family: Arial, sans-serif;
+}
+.custom-navbar {
+  background-color: #003366; /* Petkim'e uygun kurumsal koyu mavi */
+  padding: 10px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-navbar .nav-link {
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #00bfff; /* Açık mavi */
+}
+
+.custom-navbar .navbar-brand img {
+  border-radius: 5px;
+}
+/* Sidebar gizlenmiş hali */
+#sidebar.collapsed {
+  width: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+/* İçerik sola yanaşsın */
+.flex-grow-1.expanded {
+  margin-left: 0 !important;
+}
+
+#sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #003366; /* Kurumsal koyu mavi, beyaz boşluk önler */
+  padding: 1rem;
+  transition: width 0.3s ease, padding 0.3s ease;
+  overflow: hidden;
+  color: white;
+  z-index: 1000;
+}
+
+
+.flex-grow-1 {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 15%; /* Bootstrap default'undan sıfırlanır */
+  padding: 0 1rem;
+  z-index: 10;
+  max-width: 100%;
+}
+
+.animate-text {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+.info-section {
+  min-height: 80vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.info-section .row {
+  align-items: center;
+}
+
+.info-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.fade-in {
+  opacity: 100;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 100;
+  transform: translateY(0);
+}
+
+.product-cards {
+  padding: 3rem 0;
+}
+
+.product-cards .card {
+  border: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.product-cards .card img {
+  max-width : fit-content;
+  max-height: fit-content;
+  margin-bottom: 1rem;
+}
+
+.product-cards .card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer i {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+  color: white;
+}
+
+footer i:hover {
+  color: #00bfff;
+}
+
+.surdurulebilirlik-bg {
+  background-image: url('images/8.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.surdurulebilirlik-bg h2,
+.surdurulebilirlik-bg strong {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+/* Fade animasyon (isteğe bağlı) */
+.carousel-caption h1, .carousel-caption p {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.dropdown-menu {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  padding: 10px 0;
+  background-color: #fff;
+  border: none;
+}
+
+.dropdown-menu .dropdown-item {
+  font-weight: 500;
+  padding: 10px 20px;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: #f0f0f0;
+  color: #b30000;
+}
+
+.navbar .nav-link {
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+#mainCarousel {
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+#mainCarousel::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #003366, #00aaff);
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0 0 6px rgba(0, 170, 255, 0.5);
+  margin-top: 10px;
+}
+
+
+#mainCarousel {
+  border-bottom: 3px solid #003366; /* koyu mavi, istediğin renk olabilir */
+  padding-bottom: 10px; /* çizgi ile slider içeriği arasında biraz boşluk */
+  margin-bottom: 30px; /* çizgi ile sonraki içerik arası */
+}
+
+
+
+

@@ -1,0 +1,48 @@
+/* Sidebar */
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: darkcyan;
+    color: white;
+    transition: width 0.3s ease, padding 0.3s ease;
+    overflow-x: hidden;
+    padding: 1rem;
+    z-index: 1000;
+  }
+  
+  #sidebar .nav-link {
+    color: white;
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  
+  #sidebar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Sidebar kapalı hali */
+  #sidebar.collapsed {
+    width: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+  }
+  
+  /* İçerik alanı */
+  .main-content {
+    margin-left: 233px;
+    transition: margin-left 0.3s ease;
+    padding: 1rem;
+  }
+  
+  /* Sidebar kapalıyken içerik tam genişlik */
+  .main-content.expanded {
+    margin-left: 0 !important;
+  }
+  
+  

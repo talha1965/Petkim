@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Petkim | Hakkımızda</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Özel CSS -->
+  <link rel="stylesheet" href="hakkımızda.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+  <div class="d-flex">
+    <div id="sidebar" class="sidebar p-3 text-white">
+      <img src="images/petkim-logo.png" alt="Petkim Logo" style="height: 40px; width: auto;" class="me-2 mb-4">
+      <ul class="nav flex-column">
+        <li class="nav-item"><a href="index.html" class="nav-link text-white d-flex"><i class="bi bi-house-door me-2"></i> Anasayfa</a></li>
+        <li class="nav-item"><a href="hakkimizda.html" class="nav-link text-white d-flex active"><i class="bi bi-info-circle me-2"></i> Hakkımızda</a></li>
+        <li class="nav-item"><a href="tarihce.html" class="nav-link text-white d-flex"><i class="bi bi-clock-history me-2"></i>Tarihçe</a></li>
+        <li class="nav-item"><a href="urunler.html" class="nav-link text-white d-flex"><i class="bi bi-box-seam me-2"></i> Ürünler</a></li>
+        <li class="nav-item"><a href="hizmetler.html" class="nav-link text-white d-flex"><i class="bi bi-gear-fill me-2"></i>Hizmetler</a></li>
+        <li class="nav-item"><a href="kariyer.html" class="nav-link text-white d-flex"><i class="bi bi-people-fill me-2"></i> Kariyer</a></li>
+        <li class="nav-item"><a href="iletisim.html" class="nav-link text-white d-flex"><i class="bi bi-envelope me-2"></i> İletişim</a></li>
+        <li class="nav-item"><a href="dilekvesıkayet.html" class="nav-link text-white d-flex"><i class="bi bi-envelope-paper me-2"></i>Dilek ve Şikayet</a></li>
+        <li class="nav-item"><a href="kvkk.html" class="nav-link text-white d-flex"><i class="bi bi-shield-lock-fill me-2"></i>KVKK</a></li>
+      </ul>
+    </div>
+
+
+    <div class="flex-grow-1">
+      
+      <nav style="background-color: darkred;" class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+          <button id="sidebarToggle" class="btn btn-outline-light me-3"><i class="bi bi-list"></i></button>
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/petkim-logo.png" alt="Petkim Logo" style="height: 40px;" class="me-2" />
+          </a>
+          <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link text-white" href="index.html"><i class="bi bi-house-door"></i> Anasayfa</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="hakkimizdaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-info-circle"></i> Hakkımızda
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="hakkimizdaDropdown">
+                  <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
+                  <li><a class="dropdown-item" href="tarihce.html">Tarihçe</a></li>
+                </ul>
+              </li>              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="urunlerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-box-seam"></i> Ürünler
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="urunlerDropdown">
+                  <li><a class="dropdown-item" href="urunler.html">Ürünler</a></li>
+                  <li><a class="dropdown-item" href="hizmetler.html">Hizmetler</a></li>
+                </ul>
+              </li>                            <li class="nav-item"><a class="nav-link text-white" href="kariyer.html"><i class="bi bi-people-fill"></i> Kariyer</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="urunlerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-box-seam"></i> İletişim
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="urunlerDropdown">
+                  <li><a class="dropdown-item" href="iletisim.html">İletişim</a></li>
+                  <li><a class="dropdown-item" href="dilekvesıkayet.html">Dilek ve Şikayet</a></li>
+                </ul>
+              </li>      
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Banner -->
+      <section class="banner d-flex justify-content-center align-items-center text-white">
+        <h1>Hakkımızda</h1>
+      </section>
+
+      <!-- Bir Bakışta Petkim -->
+      <section class="overview container my-5">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h2 class="overview-title">BİR BAKIŞTA PETKİM</h2>
+            <p class="overview-text">
+              Sürdürülebilir değer yaratmak için endüstriyel ürünler üreten Türkiye’nin ilk ve tek entegre petrokimya şirketiyiz.<br /><br />
+              Sanayinin vazgeçilmez hammadde tedarikçisi olarak bir yandan ülke ekonomisine güç katıyor diğer yandan sürdürülebilir kalkınmaya destek sağlıyoruz.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="images/bırbakısta.jpg" alt="Petkim Tesisleri" class="img-fluid rounded overview-img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Uzun Metin -->
+      <section class="content container mb-5">
+        <p>
+          İstihdam ve ekonomiye katkılarımızın yanı sıra enerji verimliliği, iş sağlığı ve güvenliği, proses güvenliği ve çevre-dostu üretim süreçlerine yaptığımız yatırımlarla temiz bir geleceğe öncülük ediyoruz.
+        </p>
+        <p>
+          Sektördeki 56 yılı aşkın deneyimimizi “dijital düşünme” yaklaşımı altında 60’a yakın petrokimya ürünüyle taçlandırıyoruz. Termoplastik, elyaf, boya hammaddesi gibi yüksek katma değerli ürünlerimiz ile plastik, kimya, ambalaj, boru, boya, inşaat, tarım, otomotiv, elektronik, tekstil, ilaç, deterjan, kozmetik gibi sayısız sektöre hayat veriyoruz.
+        </p>
+        <p>
+          İzmir Aliağa’da bulunan 15 ana ve 6 yardımcı tesisimizde, tam kapasite çalışarak Türkiye’nin petrokimyasal hammadde ihtiyacının yaklaşık %11’sini karşılıyoruz. Uluslararası piyasada ise yaklaşık 48 ülkeye sağladığımız tedariklerle, Ege Bölgesi’nin en büyük ihracatçısı konumundayız.
+        </p>
+        <p>
+          Ar-Ge alanındaki köklü geçmişimizi ileri teknolojilerle buluşturarak enerji verimliliği ve ürün kalitesindeki performansımızı daima yukarı taşıyoruz. Bu kapsamda Dijital dönüşümde ulaştığımız Endüstri 4.0 standardı ile Dünya Ekonomik Forumu’nun (WEF) belirlediği ve “geleceğin tesisleri” olarak kabul edilen “WEF Global Lighthouse Network”e 2020 yılında Türkiye’den seçilen tek şirket olduk. Bugün, dijitalleşmede yakaladığımız uluslararası başarılar ve güçlü sürdürülebilirlik vizyonumuz sayesinde geleceğe tüm inancımızla hazırız.
+        </p>
+        <section class="vizyon-misyon-section py-5">
+            <div class="container">
+              <div class="row g-4 justify-content-center">
+                <!-- Vizyon Kartı -->
+                <div class="col-md-6">
+                  <div class="card shadow-sm border-0 h-100 vizyon-kart">
+                    <div class="card-body">
+                      <h3 class="card-title text-primary">Vizyonumuz</h3>
+                      <p class="card-text">
+                        Üstün nitelikli petrokimya ürünlerimizle Türkiye ekonomisinin gücüne güç katmak.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Misyon Kartı -->
+                <div class="col-md-6">
+                  <div class="card shadow-sm border-0 h-100 misyon-kart">
+                    <div class="card-body">
+                      <h3 class="card-title text-success">Misyonumuz</h3>
+                      <p class="card-text">
+                        Güçlü organizasyonu ve kültürüyle operasyonel mükemmeliyeti hedefleyen gelişimimizi paydaşlarımızla birlikte sürekli kılmak.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+      </section>
+    </div>
+  </div>
+
+  <footer class="text-center text-white py-4" style="background-color: #003366;">
+    <div class="container">
+      <strong class="mb-2">&copy; 2025 Petkim. Tüm hakları saklıdır.</strong>
+      <div>
+        <a href="https://www.facebook.com/petkimofficial/?locale=tr_TR" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="https://x.com/PetkimOfficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/petkim-petrokimya-holding-a.s.?originalSubdomain=tr" class="text-white"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

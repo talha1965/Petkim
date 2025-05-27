@@ -1,0 +1,40 @@
+.sidebar ul.nav li.nav-item a.nav-link:hover,
+.sidebar ul.nav li.nav-item a.nav-link.active {
+  background-color: #6b0000;
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+    font-family: 'Roboto', 'Segoe UI', Tahoma, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8; /* Okunabilirliği artırır */
+    color: #333333; /* Yumuşak siyah, göz yormaz */
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.3px;
+    text-align: justify; /* Düzgün hizalanmış yazı görünümü */
+    transition: color 0.3s ease;
+  }
+  
+  p:hover {
+    color: #8B0000; /* Üzerine gelince koyu kırmızıya geçiş */
+  }
+
+  .sidebar ul.nav {
+    padding-left: 0;
+    margin-top: 1rem;
+  }
+  
+  .sidebar ul.nav li.nav-item {
+    margin-bottom: 0.8rem;
+  }
+  
+  .sidebar ul.nav li.nav-item a.nav-link {
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.3rem;
+    transition: background-color 0.2s ease;
+  }

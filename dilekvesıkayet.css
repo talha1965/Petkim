@@ -1,0 +1,68 @@
+/* Genel kart görünümü */
+.card {
+    border: 1px solid #dee2e6;
+    border-radius: 1rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Kart başlığı için özel stil */
+  .card-header {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-bottom: none;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  
+  /* Form etiketleri */
+  .card-body .form-label {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Giriş alanları */
+  .card-body .form-control,
+  .card-body .form-select {
+    border-radius: 0.5rem;
+    border-color: #ced4da;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .card-body .form-control:focus,
+  .card-body .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.15rem rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Checkbox (KVKK) özel tasarımı */
+  .form-check-input:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .form-check-label {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
+  /* Gönder butonu */
+  button.btn-primary {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Mobil uyum için responsive destek */
+  @media (max-width: 576px) {
+    .card {
+      margin: 0 1rem;
+    }
+  }
+  

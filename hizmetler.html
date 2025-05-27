@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petkim | Hizmetler</title>
+     <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  
+  
+  <!-- Özel CSS -->
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="sidebar.css">
+<link rel="stylesheet" href="hover.css">
+<link rel="stylesheet" href="hizmetler.css">
+
+<link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <div id="sidebar" class="sidebar p-3 text-white">
+          <img src="images/petkim-logo.png" alt="Petkim Logo" style="height: 40px; width: auto;" class="me-2 mb-4">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a href="index.html" class="nav-link text-white d-flex"><i class="bi bi-house-door me-2"></i> Anasayfa</a></li>
+            <li class="nav-item"><a href="hakkimizda.html" class="nav-link text-white d-flex"><i class="bi bi-info-circle me-2"></i> Hakkımızda</a></li>
+            <li class="nav-item"><a href="tarihce.html" class="nav-link text-white d-flex"><i class="bi bi-clock-history me-2"></i>Tarihçe</a></li>
+            <li class="nav-item"><a href="urunler.html" class="nav-link text-white d-flex"><i class="bi bi-box-seam me-2"></i> Ürünler</a></li>
+            <li class="nav-item"><a href="hizmetler.html" class="nav-link text-white d-flex active"><i class="bi bi-gear-fill me-2"></i>Hizmetler</a></li>
+            <li class="nav-item"><a href="kariyer.html" class="nav-link text-white d-flex"><i class="bi bi-people-fill me-2"></i> Kariyer</a></li>
+            <li class="nav-item"><a href="iletisim.html" class="nav-link text-white d-flex"><i class="bi bi-envelope me-2"></i> İletişim</a></li>
+            <li class="nav-item"><a href="dilekvesıkayet.html" class="nav-link text-white d-flex"><i class="bi bi-envelope-paper me-2"></i>Dilek ve Şikayet</a></li>
+            <li class="nav-item"><a href="kvkk.html" class="nav-link text-white d-flex"><i class="bi bi-shield-lock-fill me-2"></i>KVKK</a></li>
+          </ul>
+        </div>
+    
+        <div class="flex-grow-1">
+            <nav style="background-color: darkred;" class="navbar navbar-expand-lg custom-navbar">
+                <div class="container-fluid">
+                  <button id="sidebarToggle" class="btn btn-outline-light me-3"><i class="bi bi-list"></i></button>
+                  <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="images/petkim-logo.png" alt="Petkim Logo" style="height: 40px;" class="me-2" />
+                  </a>
+                  <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item"><a class="nav-link text-white" href="index.html"><i class="bi bi-house-door"></i> Anasayfa</a></li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="hakkimizdaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="bi bi-info-circle"></i> Hakkımızda
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="hakkimizdaDropdown">
+                          <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
+                          <li><a class="dropdown-item" href="tarihce.html">Tarihçe</a></li>
+                        </ul>
+                      </li>              
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="urunlerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="bi bi-box-seam"></i> Ürünler
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="urunlerDropdown">
+                          <li><a class="dropdown-item" href="urunler.html">Ürünler</a></li>
+                          <li><a class="dropdown-item" href="hizmetler.html">Hizmetler</a></li>
+                        </ul>
+                      </li>                            <li class="nav-item"><a class="nav-link text-white" href="kariyer.html"><i class="bi bi-people-fill"></i> Kariyer</a></li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="urunlerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="bi bi-box-seam"></i> İletişim
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="urunlerDropdown">
+                          <li><a class="dropdown-item" href="iletisim.html">İletişim</a></li>
+                          <li><a class="dropdown-item" href="dilekvesıkayet.html">Dilek ve Şikayet</a></li>
+                        </ul>
+                      </li>      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            <!-- Hizmetler sayfası içeriği, iskelet sistemine entegre edilecek şekilde -->
+    <div class="container my-5">
+    
+        <h1 class="mb-4">Petkim Liman Operasyonları</h1>
+        <p>1985 yılında faaliyetlerine başlayan Petkim Limanı, toplamda 46.979 m²’lik bir alan içerisinde şirketimize ve tüm paydaşlarımıza hizmet sağlıyor.</p>
+        <p>Limanımızda petrol ürün tankeri, kimyasal tanker ve sıvılaştırılmış gaz tankerlerinin tahmil/tahliye işlemleri İskele Operasyonları Müdürlüğü tarafından yürütülüyor. Uluslararası bir sözleşme olan MARPOL 73/78 kapsamındaki gemi atıkları için ise T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı tarafından verilen lisans belgesiyle atık alım hizmetleri sunuluyor. Kılavuzluk ve römorkörcülük hizmetleri ise Deniz Hizmetleri Müdürlüğü tarafından veriliyor.</p>
+      
+        <h2 class="mt-5">Petkim Limanı Bilgi ve Kurallar Kitapçığı</h2>
+        <ul>
+          <li><a href="#" class="text-decoration-none">Tehlikeli Yük Elleçleme Rehberi</a></li>
+          <li><a href="#" class="text-decoration-none">Tehlikeli Yük Elleçleme Rehberi Tüm Ekler</a></li>
+        </ul>
+      
+        <h2 class="mt-5">Vizyon, Misyon ve Politikalar</h2>
+        <p>Şirketimizin vizyon, misyon ve değerleri ışığında, çağdaş bir liman işletmeciliği yaklaşımıyla aşağıdaki politikaları benimsiyoruz:</p>
+        <ul>
+          <li>Petkim Limanı’nın iç ve dış platformlarda, uluslararası standartlarda çalışan ve tercih edilen bir liman olmasını sağlamak</li>
+          <li>Müşterilerimizin teknik ve ekonomik taleplerine zamanında ve istenilen kalite düzeyinde cevap vererek müşteri memnuniyetini en üst düzeye çıkarmak</li>
+          <li>Çağdaş liman işletmeciliği anlayışı ile kaliteli hizmeti rekabetçi maliyetlerle sunmak, Türk ekonomisine katkı sağlamak</li>
+          <li>Çevreye saygı duymak</li>
+          <li>Gemilerin elleçleme operasyonlarını emniyetli ve çevreci bir şekilde yapmak</li>
+          <li>Mevcut olan Yeşil Liman Sertifikası’nın (Green Port Certificate) gerekliliklerini her daim karşılamak</li>
+        </ul>
+      
+        <h2 class="mt-5">Liman Hizmetleri</h2>
+      
+        <h3 class="mt-4">Yük Operasyonları</h3>
+        <p>1 iskele ve 2 rıhtım ile hizmet sağlıyoruz.</p>
+        <p>Limanımızda, Petkim’in ihtiyaçları doğrultusunda ithal ve ihraç edilen <strong>Asetikasit, ACN, Aromatik Yağ, Benzen, C5, Kostik, Cutterstock, EDC, Hegzan, Heptan, MEG, Nafta, Paraksilen, Ortoksilen, PY Gas, Etilen, Amonyak, Propilen, C4, LPG, VCM, DEG, Cf. Oil</strong> ürünlerine yönelik elleçleme yapılıyor.</p>
+      
+        <h3 class="mt-4">Atık Alım Hizmetleri</h3>
+        <p>Türkiye’nin en modern atık arıtma tesislerinden birine sahibiz. Tesisimizde T.C. Çevre, Şehircilik ve İklim Değişikliği Bakanlığı’nın düzenlemelerine uygun olarak katı ve sıvı atık alımı hizmeti veriyoruz.</p>
+        <p>Gemilerden kabul edilen katı atıklar kategorilere ayrıştırılarak atık giderme ünitesinde toplanmakta ve sıfır atık politikası ile hareket edilmektedir. Gemilerden MARPOL kapsamında alınan sıvı atıklar, atık giderme ünitesinde toplanıp bertaraf edilmektedir.</p>
+      
+        <h3 class="mt-4">Kılavuzluk ve Römorkaj</h3>
+        <p>Limanımızda kılavuzluk ve römorkaj hizmetleri Deniz Hizmetleri Müdürlüğü tarafından veriliyor. 7 kılavuz kaptan, 8 palamar personeli, 6 römorkör, 3 palamar botu ve 1 kılavuz botu ile tam kapasite çalışan teşkilatımız, Şubat 2015 tarihinden bu yana İzmir, Aliağa’nın yanı sıra Nemrut Koyu’nda da hizmet veriyor.</p>
+      
+        <h4 class="mt-3">Muhabere Detayları</h4>
+        <ul>
+          <li>Çağrı: Petkim Pilot</li>
+          <li>E-mail: <a href="mailto:kilavuz@petkim.com.tr">kilavuz@petkim.com.tr</a></li>
+          <li>VHF Kanalları: 12, 16</li>
+          <li>Telefon: (0)232 616 1240 - 3124(dahili)</li>
+        </ul>
+      
+        <h3 class="mt-4">Tatlı Su İkmali</h3>
+        <p>Limanımıza gelen gemiler varış öncesi evraklarla su ikmal taleplerini belirtmesi halinde gemi yanaşmasına müteakip gerekli tedarik sağlanmaktadır.</p>
+      
+        <h2 class="mt-5">Petkim Liman Bilgileri</h2>
+      
+        <h3>İskele ve Rıhtım Bilgileri</h3>
+        <table class="table table-bordered mt-3">
+          <thead class="table-light">
+            <tr>
+              <th>İSKELE/RIHTIM</th>
+              <th>Max GEMİ BOYU (m)</th>
+              <th>Max GEMİ DRAFTI (m)</th>
+              <th>DWT</th>
+              <th>ELLEÇLENEN ÜRÜN</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>RIHTIM-2</td>
+              <td>129</td>
+              <td>9,14</td>
+              <td>40000</td>
+              <td>MODERNİZASYON SÜRECİNDE OLUP GEMİ OPERASYONLARINA KAPALIDIR.</td>
+            </tr>
+            <tr>
+              <td>RIHTIM 3</td>
+              <td>175</td>
+              <td>11,49</td>
+              <td>40000</td>
+              <td>ACN, BENZENE, C5, PARAXYLENE, ORTHOXYLENE, MEG, DEG, CUTTERSTOCK, AROMATIC OIL, NAPHTHA, PYGAS, AMMONIA, PROPYLENE, BUTANE, LPG, ETHYLENE, CAUSTIC, HEGXANE, HEPTANE, ACETIC ACIT</td>
+            </tr>
+            <tr>
+              <td>İSKELE-5</td>
+              <td>190</td>
+              <td>10,5</td>
+              <td>40000</td>
+              <td>AROM.YAĞ / CUTTERSTOCK / CF. OIL, NAFTA, AMONYAK, VCM, EDC, KOSTİK, C4</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h3>Liman Konumu</h3>
+        <p><strong>MEVKİİ:</strong><br>
+          38° 46' 36" N - 026° 55' 33" E pozisyonundaki liman feneri<br>
+          38° 46' 30" N - 026° 55' 30" E pozisyonundaki deniz noktası<br>
+          38° 46' 30" N - 026° 55' 49" E pozisyonundaki kara noktasını bağlayan alan içerisinde bulunuyor.
+        </p>
+        <p><strong>PİLOT MEVKİİ:</strong> 38°46’ 34”N - 26°54’ 38” E</p>
+        <p><strong>ZAMAN:</strong> GMT +02</p>
+      
+        <h2 class="mt-5">Liman Güvenliği</h2>
+        <p>Uluslararası Gemi ve Liman Tesisleri Güvenlik Kodu (ISPS), 12 Aralık 2002 tarihinde, SOLAS 1974 Uluslararası Anlaşması’na Taraf Devletler Konferansı 2 no’lu kararı ile kabul edilmiştir...</p>
+      
+        <h3 class="mt-4">Güvenlik Politikamız</h3>
+        <p>Petkim Petrokimya Holding A.Ş’nin mevcut güvenlik politikası, başta liman tesisi olmak üzere...</p>
+      
+        <h3 class="mt-4">Güvenlik Seviyesi</h3>
+        <ul>
+          <li><strong>Seviye 1:</strong> Asgari koruyucu güvenlik tedbirlerinin her zaman sürdürüleceği seviyedir.</li>
+          <li><strong>Seviye 2:</strong> Belirli bir süre boyunca ilave tedbirlerin uygulandığı seviye.</li>
+          <li><strong>Seviye 3:</strong> En ileri düzeyde ve belirli koruyucu tedbirlerin alındığı seviye.</li>
+        </ul>
+        <p>Limanımız her üç seviyede de güvenlik uygulaması yapabilecek kapasiteye sahiptir.</p>
+      
+        <h3 class="mt-4">Genel Güvenlik Esasları</h3>
+        <ul>
+          <li>Liman çalışanları ve ziyaretçiler için kimlik kartları ve giriş izni uygulaması yapılır.</li>
+          <li>Fotoğraflı kimlik kartları Mülki İdare Amir onaylıdır.</li>
+          <li>Sadece giriş kartı olan araçlar liman sahasına giriş yapabilir ve park edebilir.</li>
+          <li>Liman sahasında fotoğraf çekimi için izin alınmalıdır.</li>
+        </ul>
+      
+        <h3 class="mt-4">Liman Tesis Güvenlik Sorumlusu</h3>
+        <p><strong>Unvan:</strong> PFSO<br>
+          <strong>Cep Tel:</strong> +90 538 394 93 42<br>
+          <strong>E-Posta:</strong> <a href="mailto:deniz.guvenlik@socar.com.tr">deniz.guvenlik@socar.com.tr</a>
+        </p>
+      
+        <h2 class="mt-5">Ücretli Analiz Hizmetleri</h2>
+        <p>Aşağıda yer alan “Deney Talep Formu” ve diğer belgeler doldurulup Kalite Sağlama ve Teknik Servis Müdürlüğüne iletilmelidir.</p>
+      
+        <h3 class="mt-4">Numune Gönderimi Dikkat Edilmesi Gerekenler</h3>
+        <ul>
+          <li>Varsa orijinal ambalajlarında gönderilmelidir.</li>
+          <li>Orijinal ambalajı olmayan numuneler uygun plastik, kağıt, cam ambalajlarda gönderilmelidir.</li>
+          <li>Numunenin ambalajı nem almayı önleyecek şekilde olmalıdır.</li>
+          <li>Birden fazla numune birbirleri ile temas etmeyecek şekilde ambalajlanmalıdır.</li>
+          <li>Numunenin zarar görmemesi için paketleme dikkatli yapılmalıdır.</li>
+          <li>Resmi kurumlardan gelen mühürlü numunelerde, mühür zarar görmüşse raporda belirtilmelidir.</li>
+        </ul>
+      
+        <h3 class="mt-4">İletişim</h3>
+        <address>
+          Petkim Petrokimya Holding A.Ş.<br>
+          Kalite Sağlama ve Teknik Servis Müdürlüğü<br>
+          Siteler Mah. Necmettin GİRİTOĞLU Cad. No:6<br>
+          35800 Aliağa/İZMİR<br>
+          Telefon: (0-232) 616 12 40<br>
+          Faks: (0-232) 616 12 48<br>
+          E-posta: <a href="mailto:petkim.laboratuvar@socar.com.tr">petkim.laboratuvar@socar.com.tr</a>
+        </address>     
+    </div>
+        </div>
+            </div>
+            <footer class="text-center text-white py-4" style="background-color: #003366;">
+                <div class="container">
+                  <strong class="mb-2">&copy; 2025 Petkim. Tüm hakları saklıdır.</strong>
+                  <div>
+                    <a href="https://www.facebook.com/petkimofficial/?locale=tr_TR" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="https://x.com/PetkimOfficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/petkim-petrokimya-holding-a.s.?originalSubdomain=tr" class="text-white"><i class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </footer>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="script.js"></script>
+</body>
+</html>

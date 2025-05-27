@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Petkim | KVKK - Kişisel Verilerin Korunması</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Özel CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="hover.css">
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+  <div class="d-flex">
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar p-3 text-white">
+      <img src="images/petkim-logo.png" alt="Petkim Logo" style="height: 40px; width: auto;" class="me-2 mb-4">
+      <ul class="nav flex-column">
+        <li class="nav-item"><a href="index.html" class="nav-link text-white d-flex"><i class="bi bi-house-door me-2"></i> Anasayfa</a></li>
+        <li class="nav-item"><a href="hakkimizda.html" class="nav-link text-white d-flex"><i class="bi bi-info-circle me-2"></i> Hakkımızda</a></li>
+        <li class="nav-item"><a href="tarihce.html" class="nav-link text-white d-flex"><i class="bi bi-clock-history me-2"></i>Tarihçe</a></li>
+        <li class="nav-item"><a href="urunler.html" class="nav-link text-white d-flex"><i class="bi bi-box-seam me-2"></i> Ürünler</a></li>
+        <li class="nav-item"><a href="hizmetler.html" class="nav-link text-white d-flex"><i class="bi bi-gear-fill me-2"></i>Hizmetler</a></li>
+        <li class="nav-item"><a href="kariyer.html" class="nav-link text-white d-flex"><i class="bi bi-people-fill me-2"></i> Kariyer</a></li>
+        <li class="nav-item"><a href="iletisim.html" class="nav-link text-white d-flex"><i class="bi bi-envelope me-2"></i> İletişim</a></li>
+        <li class="nav-item"><a href="dilekvesıkayet.html" class="nav-link text-white d-flex"><i class="bi bi-envelope-paper me-2"></i>Dilek ve Şikayet</a></li>
+        <li class="nav-item"><a href="kvkk.html" class="nav-link text-white d-flex active"><i class="bi bi-shield-lock-fill me-2"></i>KVKK</a></li>
+
+      </ul>
+    </div>
+
+    <!-- Ana içerik -->
+    <div class="flex-grow-1 d-flex flex-column min-vh-100">
+        <nav style="background-color: darkred;" class="navbar navbar-expand-lg custom-navbar">
+            <div class="container-fluid">
+              <button id="sidebarToggle" class="btn btn-outline-light me-3"><i class="bi bi-list"></i></button>
+              <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/petkim-logo.png" alt="Petkim Logo" style="height: 40px;" class="me-2" />
+              </a>
+              <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item"><a class="nav-link text-white" href="index.html"><i class="bi bi-house-door"></i> Anasayfa</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="hakkimizdaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-info-circle"></i> Hakkımızda
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="hakkimizdaDropdown">
+                      <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
+                      <li><a class="dropdown-item" href="tarihce.html">Tarihçe</a></li>
+                    </ul>
+                  </li>              
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="urunlerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-box-seam"></i> Ürünler
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="urunlerDropdown">
+                      <li><a class="dropdown-item" href="urunler.html">Ürünler</a></li>
+                      <li><a class="dropdown-item" href="hizmetler.html">Hizmetler</a></li>
+                    </ul>
+                  </li>                            <li class="nav-item"><a class="nav-link text-white" href="kariyer.html"><i class="bi bi-people-fill"></i> Kariyer</a></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="urunlerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="bi bi-box-seam"></i> İletişim
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="urunlerDropdown">
+                      <li><a class="dropdown-item" href="iletisim.html">İletişim</a></li>
+                      <li><a class="dropdown-item" href="dilekvesıkayet.html">Dilek ve Şikayet</a></li>
+                    </ul>
+                  </li>      
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+      <!-- Banner -->
+      <section class="banner d-flex justify-content-center align-items-center text-black">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Kişisel Verilerin Korunması Kanunu (KVKK)</h1>
+      </section>
+
+      <!-- İçerik -->
+      <main class="container my-5 flex-grow-1">
+        <div class="row g-5">
+          <div class="col-lg-7">
+            <h2>Petkim’de Kişisel Verilerin Korunması</h2>
+            <p>
+              Petkim, faaliyetlerinde kişisel verilerin korunmasına büyük önem vermektedir. Türkiye’de yürürlükte olan Kişisel Verilerin Korunması Kanunu (KVKK) kapsamında, 
+              çalışanlarımızın, müşterilerimizin ve iş ortaklarımızın kişisel verilerinin güvenliğini sağlamak temel prensibimizdir. 
+              Verileriniz, izniniz olmadan üçüncü taraflarla paylaşılmaz ve sadece kanunların izin verdiği durumlarda kullanılmaktadır.
+            </p>
+
+            <p>
+              KVKK kapsamındaki haklarınızı bilmeniz ve bu hakları kullanabilmeniz için Petkim olarak şeffaflık ve bilgilendirme ilkesine bağlıyız. 
+              Kişisel verilerinizin işlenme amaçları, işleme yöntemleri ve süresi hakkında her zaman bilgi talep edebilirsiniz.
+            </p>
+
+            <h3>Kişisel Verilerin İşlenme Amaçları</h3>
+            <ul>
+              <li>Çalışanlarımızın özlük işlemlerinin yürütülmesi</li>
+              <li>Müşteri taleplerinin değerlendirilmesi ve hizmet kalitesinin artırılması</li>
+              <li>Hukuki yükümlülüklerin yerine getirilmesi</li>
+              <li>Pazarlama faaliyetleri ve iletişim süreçlerinin yönetilmesi (izin dahilinde)</li>
+              <li>Güvenlik ve bilgi sistemlerinin korunması</li>
+            </ul>
+
+            <h3>Veri Güvenliği Politikamız</h3>
+            <p>
+              Petkim, kişisel verilerin güvenliği için güncel teknolojik altyapılar kullanmakta ve gerekli teknik ve idari tedbirleri almaktadır. 
+              Veri erişimi sadece yetkili personelle sınırlıdır ve düzenli olarak denetimler gerçekleştirilir.
+            </p>
+
+            <h3>Haklarınız Nelerdir?</h3>
+            <p>
+              KVKK gereğince, kişisel verilerinizle ilgili aşağıdaki haklara sahipsiniz:
+            </p>
+            <ul>
+              <li>Kişisel verilerin işlenip işlenmediğini öğrenme</li>
+              <li>İşlenen veriler hakkında bilgi talep etme</li>
+              <li>Verilerin düzeltilmesini veya silinmesini isteme</li>
+              <li>İşlenme amacına itiraz etme</li>
+              <li>Veri taşınabilirliği talebinde bulunma</li>
+            </ul>
+
+            <p>
+              Bu haklarınızı kullanmak veya daha detaylı bilgi almak için bizimle iletişime geçebilirsiniz.
+            </p>
+          </div>
+
+          <div class="col-lg-5 d-flex flex-column align-items-center">
+            <img src="images/1.jpg" alt="KVKK" style="width: 740px; max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);" />
+            <p class="mt-3 text-muted text-center small">Kişisel Verilerin Korunması Kanunu kapsamında Petkim’in yaklaşımı.</p>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="text-center text-white py-4" style="background-color: #003366;">
+        <div class="container">
+          <strong class="mb-2">&copy; 2025 Petkim. Tüm hakları saklıdır.</strong>
+          <div>
+            <a href="https://www.facebook.com/petkimofficial/?locale=tr_TR" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="https://x.com/PetkimOfficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.linkedin.com/company/petkim-petrokimya-holding-a.s.?originalSubdomain=tr" class="text-white"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

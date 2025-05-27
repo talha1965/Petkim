@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Petkim | Anasayfa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="hover.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+  <div class="d-flex">
+    <div id="sidebar" class="sidebar p-3 text-white">
+      <img src="images/petkim-logo.png" alt="Petkim Logo" style="height: 40px; width: auto;" class="me-2">
+      <br><br>
+      <ul class="nav flex-column">
+        <li class="nav-item"><a href="index.html" class="nav-link text-white d-flex active"><i class="bi bi-house-door me-2"></i> Anasayfa</a></li>
+            <li class="nav-item"><a href="hakkimizda.html" class="nav-link text-white d-flex"><i class="bi bi-info-circle me-2"></i> Hakkımızda</a></li>
+            <li class="nav-item"><a href="tarihce.html" class="nav-link text-white d-flex"><i class="bi bi-clock-history me-2"></i>Tarihçe</a></li>
+            <li class="nav-item"><a href="urunler.html" class="nav-link text-white d-flex"><i class="bi bi-box-seam me-2"></i> Ürünler</a></li>
+            <li class="nav-item"><a href="hizmetler.html" class="nav-link text-white d-flex"><i class="bi bi-gear-fill me-2"></i>Hizmetler</a></li>
+            <li class="nav-item"><a href="kariyer.html" class="nav-link text-white d-flex"><i class="bi bi-people-fill me-2"></i> Kariyer</a></li>
+            <li class="nav-item"><a href="iletisim.html" class="nav-link text-white d-flex"><i class="bi bi-envelope me-2"></i> İletişim</a></li>
+            <li class="nav-item"><a href="dilekvesıkayet.html" class="nav-link text-white d-flex"><i class="bi bi-envelope-paper me-2"></i>Dilek ve Şikayet</a></li>
+            <li class="nav-item"><a href="kvkk.html" class="nav-link text-white d-flex"><i class="bi bi-shield-lock-fill me-2"></i>KVKK</a></li>
+      </ul>
+    </div>
+
+    <div class="flex-grow-1 ">
+
+      <nav style="background-color: darkred;" class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+          <button id="sidebarToggle" class="btn btn-outline-light me-3"><i class="bi bi-list"></i></button>
+          <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="images/petkim-logo.png" alt="Petkim Logo" style="height: 40px;" class="me-2" />
+          </a>
+          <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link text-white" href="index.html"><i class="bi bi-house-door"></i> Anasayfa</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="hakkimizdaDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-info-circle"></i> Hakkımızda
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="hakkimizdaDropdown">
+                  <li><a class="dropdown-item" href="hakkimizda.html">Hakkımızda</a></li>
+                  <li><a class="dropdown-item" href="tarihce.html">Tarihçe</a></li>
+                </ul>
+              </li>              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="urunlerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-box-seam"></i> Ürünler
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="urunlerDropdown">
+                  <li><a class="dropdown-item" href="urunler.html">Ürünler</a></li>
+                  <li><a class="dropdown-item" href="hizmetler.html">Hizmetler</a></li>
+                </ul>
+              </li>                            <li class="nav-item"><a class="nav-link text-white" href="kariyer.html"><i class="bi bi-people-fill"></i> Kariyer</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" id="urunlerDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-box-seam"></i> İletişim
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="urunlerDropdown">
+                  <li><a class="dropdown-item" href="iletisim.html">İletişim</a></li>
+                  <li><a class="dropdown-item" href="dilekvesıkayet.html">Dilek ve Şikayet</a></li>
+                </ul>
+              </li>      
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div id="mainCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/slider1.jpg" class="d-block w-100" alt="Slider 1">
+      <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center">
+        <h1 class="display-4 fw-bold text-uppercase text-shadow text">PETKİM'E HOŞGELDİNİZ</h1>
+        <strong class="lead text-shadow">Grup şirketlerimiz “Türkiye'nin 500 Büyük Sanayi Kuruluşu 2023” listesinde</strong>
+        <a href="hakkimizda.html" class="btn btn-outline-light mt-3">Bizi Tanıyın</a>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/slider2.jpg" class="d-block w-100" alt="Slider 2">
+      <div class="carousel-caption d-flex flex-column justify-content-center align-items-center text-center">
+        <h1 class="display-4 fw-bold text-uppercase text-shadow">PETKİM'E HOŞGELDİNİZ</h1>
+        <strong class="lead text-shadow">4 Grup Şirketimiz Capital 500 Listesi’nde!</strong>
+        <a href="hakkimizda.html" class="btn btn-outline-light mt-3">Bizi Tanıyın</a>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev custom-slider-btn" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+    <span><i class="bi bi-chevron-left fs-1"></i></span>
+  </button>
+
+  <button class="carousel-control-next custom-slider-btn" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+    <span><i class="bi bi-chevron-right fs-1"></i></span>
+  </button>
+</div>
+
+        <section class="info-section d-flex align-items-center" id="bir-bakista" style="background-color: lightcyan;">
+          <div class="container py-5">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <img src="images/bırbakısta.jpg" alt="Petkim Hakkında" class="img-fluid rounded">
+              </div>
+              <div class="col-md-6 fade-in">
+                <h2 class="animate-text">Bir Bakışta Petkim</h2>
+                <strong class="animate-text">Türkiye’nin ilk ve tek entegre petrokimya şirketi olarak sanayiye yüksek kalitede hammadde girdisi sağlıyoruz. Çevik iş modeli altında sunduğumuz petrokimyasal çeşitliliğiyle ülke ekonomisine katkıda bulunurken; verimlilik, devamlılık ve yenilikçi teknolojiler odağında sürdürülebilir kalkınmaya hizmet ediyoruz.</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+        <section class="info-section d-flex align-items-center bg-light" id="surdurulebilirlik">
+          <div class="container py-5">
+            <div class="row align-items-center">
+              <div class="col-md-30 fade-in">
+                <div class="surdurulebilirlik-bg">
+                  <h2 class="animate-text">Sürdürülebilirlik Yaklaşımımız</h2>
+                  <strong class="animate-text">
+                    Petkim’de paydaşlarımıza karşı sorumluluklarımızın bilinciyle sosyal, çevresel ve ekonomik etkilerimizi en iyi şekilde yönetmeye odaklanıyoruz. Üretim süreçlerimizde yenilenebilir enerji kullanımı, iş sağlığı ve güvenliği, ürün kalitesi iyileştirme ve kaynak verimliliği konularına teknolojik yatırımlar yaparak sürdürülebilir bir gelecek için katma değer yaratıyoruz.
+                  </strong>
+                </div>
+              </div>        
+              </div>
+            </div>
+        </section>
+      
+        <section class="product-cards py-5">
+          <div class="container">
+            <h2 class="text-center mb-4"> <a href="urunler.html"   class="text-center mb-4"> Ürünlerimiz</h2></a>
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <img src="images/yuksek-yogunluklu-polietilen-hdpe-nedir.jpg" class="card-img-top p-4" alt="Petkim Logo">
+                  <div class="card-body">
+                    <h5 class="card-title">Polietilen</h5>
+                    <p class="card-text">Yüksek dayanımlı ve çeşitli endüstrilerde kullanılan polimer çeşitleri.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <img src="images/polipropilen-nedir-nerelerde-kullanilir.jpg" class="card-img-top p-4" alt="Petkim Logo">
+                  <div class="card-body">
+                    <h5 class="card-title">Polipropilen</h5>
+                    <p class="card-text">Ambalaj ve otomotiv sanayinde yoğun olarak kullanılan termoplastik malzeme.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card h-100">
+                  <img src="images/istockphoto-512524387-612x612.jpg" class="card-img-top p-4" alt="Petkim Logo">
+                  <div class="card-body">
+                    <h5 class="card-title">PVC</h5>
+                    <p class="card-text">Yapı, elektrik ve medikal alanlarda yaygın olarak kullanılan plastik türü.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="text-center text-white py-4" style="background-color: #003366;">
+    <div class="container">
+      <strong class="mb-2">&copy; 2025 Petkim. Tüm hakları saklıdır.</strong>
+      <div>
+        <a href="https://www.facebook.com/petkimofficial/?locale=tr_TR" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="https://x.com/PetkimOfficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/petkim-petrokimya-holding-a.s.?originalSubdomain=tr" class="text-white"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
